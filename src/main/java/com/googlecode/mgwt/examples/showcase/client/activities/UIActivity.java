@@ -43,7 +43,6 @@ public class UIActivity extends MGWTAbstractActivity {
 
   public UIActivity(ClientFactory clientFactory) {
     this.clientFactory = clientFactory;
-
   }
 
   @Override
@@ -57,7 +56,6 @@ public class UIActivity extends MGWTAbstractActivity {
       @Override
       public void onTap(TapEvent event) {
         ActionEvent.fire(eventBus, ActionNames.BACK);
-
       }
     }));
     items = createItems();
@@ -68,23 +66,16 @@ public class UIActivity extends MGWTAbstractActivity {
       @Override
       public void onCellSelected(CellSelectedEvent event) {
         int index = event.getIndex();
-
         view.setSelectedIndex(oldIndex, false);
         view.setSelectedIndex(index, true);
         oldIndex = index;
-
         UIEntrySelectedEvent.fire(eventBus, items.get(index).getEntry());
-
       }
     }));
 
     panel.setWidget(view);
-
   }
 
-  /**
-   * @return
-   */
   private List<Item> createItems() {
     ArrayList<Item> list = new ArrayList<Item>();
     list.add(new Item("ButtonBar", UIEntry.BUTTON_BAR));
@@ -100,9 +91,7 @@ public class UIActivity extends MGWTAbstractActivity {
     list.add(new Item("Scroll Widget", UIEntry.SCROLL_WIDGET));
     list.add(new Item("Searchbox", UIEntry.SEARCH_BOX));
     list.add(new Item("Slider", UIEntry.SLIDER));
-    // TODO readd once tabbar is fixed
-//    list.add(new Item("TabBar", UIEntry.TABBAR));
+    list.add(new Item("TabBar", UIEntry.TABBAR));
     return list;
   }
-
 }

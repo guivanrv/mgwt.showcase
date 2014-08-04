@@ -36,11 +36,7 @@ public class AboutViewGwtImpl extends DetailViewGwtImpl implements AboutView {
   private Button button;
 
   public AboutViewGwtImpl() {
-
-
-
     round = new Panel();
-
     FlexPanel flexPanel = new FlexPanel();
     flexPanel.setOrientation(Orientation.VERTICAL);
     flexPanel.setAlignment(Alignment.CENTER);
@@ -60,17 +56,13 @@ public class AboutViewGwtImpl extends DetailViewGwtImpl implements AboutView {
 
       flexPanel.add(button);
     }
-
     scrollPanel.setWidget(round);
     scrollPanel.setScrollingEnabledX(false);
-
   }
 
   @Override
   public HasTapHandlers getBackbutton() {
-
     final HasTapHandlers superB = super.getBackbutton();
-
     return new HasTapHandlers() {
 
       @Override
@@ -93,7 +85,5 @@ public class AboutViewGwtImpl extends DetailViewGwtImpl implements AboutView {
         };
       }
     };
-
   }
-
 }
