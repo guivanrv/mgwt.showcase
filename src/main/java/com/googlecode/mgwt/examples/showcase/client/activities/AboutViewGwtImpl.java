@@ -44,7 +44,7 @@ public class AboutViewGwtImpl extends DetailViewGwtImpl implements AboutView {
     round.setRound(true);
 
     flexPanel.add(new HTML("mgwt"));
-    flexPanel.add(new HTML("Version 2.0.0-SNAPSHOT"));
+    flexPanel.add(new HTML("Version 2.0.0"));
     flexPanel.add(new HTML("Built by Daniel Kurka, <a target='_blank' href='http://www.twitter.com/dankurka'>@dankurka</a> on Twitter"));
 
     flexPanel.add(new HTML("Using GWT to build mobile apps"));
