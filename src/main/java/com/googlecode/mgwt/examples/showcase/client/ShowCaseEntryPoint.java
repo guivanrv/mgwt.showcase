@@ -39,7 +39,7 @@ public class ShowCaseEntryPoint implements EntryPoint {
     SuperDevModeUtil.showDevMode();
 
     ViewPort viewPort = new MGWTSettings.ViewPort();
-    viewPort.setUserScaleAble(false).setMinimumScale(1.0).setMinimumScale(1.0).setMaximumScale(1.0);
+    viewPort.setUserScaleAble(false).setMinimumScale(1.0).setInitialScale(1.0).setMaximumScale(1.0);
 
     MGWTSettings settings = new MGWTSettings();
     settings.setViewPort(viewPort);
