@@ -63,7 +63,7 @@ public class ElementsViewImpl extends DetailViewGwtImpl implements ElementsView 
     widgetList.add(numberBox);
 
     MDateBox dateBox = new MDateBox();
-    dateBox.setPlaceHolder("mm/dd//yyyy");
+    dateBox.setPlaceHolder("mm/dd/yyyy");
     widgetList.add(dateBox);
 //    dateBox.setValue(new Date());
 
