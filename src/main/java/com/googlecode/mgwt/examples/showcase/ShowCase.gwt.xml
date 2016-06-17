@@ -23,6 +23,8 @@
   <set-configuration-property name="CssResource.obfuscationPrefix" value=""/>
   <set-property name="compiler.stackMode" value="strip"/>
   <set-configuration-property name="compiler.enum.obfuscate.names" value="true"/>
+  <set-configuration-property name="CssResource.enableGss" value="true" />
+  -->
   <add-linker name="xsiframe"/>
   <!-- 	<set-configuration-property name="devModeRedirectEnabled" value="true"/> -->
   <!-- 	<set-configuration-property name="mgwt.superdevmode" value="on" /> -->
@@ -32,4 +34,5 @@
   <!-- 	<set-configuration-property name="devModeUrlWhitelistRegexp" value="(:|\d.|\.|/)*" /> -->
 	
   <source path="client" />
+
 </module>
